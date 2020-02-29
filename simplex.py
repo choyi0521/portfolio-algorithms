@@ -1,6 +1,6 @@
 """
 credit - https://github.com/ray-project/ray/blob/master/rllib/models/extra_spaces.py
-remove seed function from the reference because it occurs error
+seed function was removed from the reference because it occurs error
 """
 
 import numpy as np

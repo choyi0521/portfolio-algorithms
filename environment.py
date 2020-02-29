@@ -42,8 +42,3 @@ class StockTradingEnvironment(gym.Env):
         self.t += 1
         self.weights = np.concatnate((self.weights[:-1, :], [action]), axis=0)
         return self._get_obs(), reward, self.t == self.lginc.shape[-1] - self.obs_weight_num + 1
-
-
-
-ste = StockTradingEnvironment(3)
-print(ste.action_space.sample())
