@@ -3,3 +3,6 @@ class StockTradingEnvironment(gym.Env):
         super().__init__()
         self.action_space = Simplex(shape=(n_items,))
         # self.observation_space =
+
+ste = StockTradingEnvironment()
+        
